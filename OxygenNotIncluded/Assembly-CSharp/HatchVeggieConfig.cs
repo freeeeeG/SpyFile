@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using Klei.AI;
+using STRINGS;
+using TUNING;
+using UnityEngine;
+
+// Token: 0x020000F8 RID: 248
+[EntityConfigOrder(1)]
+public class HatchVeggieConfig : IEntityConfig
+{
+	// Token: 0x0600049C RID: 1180 RVA: 0x00021D84 File Offset: 0x0001FF84
+	public static GameObject CreateHatch(string id, string name, string desc, string anim_file, bool is_baby)
+	{
+		GameObject prefab = EntityTemplates.ExtendEntityToWildCreature(BaseHatchConfig.BaseHatch(id, name, desc, anim_file, "HatchVeggieBaseTrait", is_baby, "veg_"), HatchTuning.PEN_SIZE_PER_CREATURE);
+		Trait trait = Db.Get().CreateTrait("HatchVeggieBaseTrait", name, name, null, false, null, true, true);
+		trait.Add(new AttributeModifier(Db.Get().Amounts.Calories.maxAttribute.Id, HatchTuning.STANDARD_STOMACH_SIZE, name, false, false, true));
+		trait.Add(new AttributeModifier(Db.Get().Amounts.Calories.deltaAttribute.Id, -HatchTuning.STANDARD_CALORIES_PER_CYCLE / 600f, name, false, false, true));
+		trait.Add(new AttributeModifier(Db.Get().Amounts.HitPoints.maxAttribute.Id, 25f, name, false, false, true));
+		trait.Add(new AttributeModifier(Db.Get().Amounts.Age.maxAttribute.Id, 100f, name, false, false, true));
+		List<Diet.Info> list = BaseHatchConfig.VeggieDiet(SimHashes.Carbon.CreateTag(), HatchVeggieConfig.CALORIES_PER_KG_OF_ORE, TUNING.CREATURES.CONVERSION_EFFICIENCY.GOOD_3, null, 0f);
+		list.AddRange(BaseHatchConfig.FoodDiet(SimHashes.Carbon.CreateTag(), HatchVeggieConfig.CALORIES_PER_KG_OF_ORE, TUNING.CREATURES.CONVERSION_EFFICIENCY.GOOD_3, null, 0f));
+		return BaseHatchConfig.SetupDiet(prefab, list, HatchVeggieConfig.CALORIES_PER_KG_OF_ORE, HatchVeggieConfig.MIN_POOP_SIZE_IN_KG);
+	}
+
+	// Token: 0x0600049D RID: 1181 RVA: 0x00021ED5 File Offset: 0x000200D5
+	public string[] GetDlcIds()
+	{
+		return DlcManager.AVAILABLE_ALL_VERSIONS;
+	}
+
+	// Token: 0x0600049E RID: 1182 RVA: 0x00021EDC File Offset: 0x000200DC
+	public GameObject CreatePrefab()
+	{
+		return EntityTemplates.ExtendEntityToFertileCreature(HatchVeggieConfig.CreateHatch("HatchVeggie", STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.NAME, STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC, "hatch_kanim", false), "HatchVeggieEgg", STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.EGG_NAME, STRINGS.CREATURES.SPECIES.HATCH.VARIANT_VEGGIE.DESC, "egg_hatch_kanim", HatchTuning.EGG_MASS, "HatchVeggieBaby", 60.000004f, 20f, HatchTuning.EGG_CHANCES_VEGGIE, HatchVeggieConfig.EGG_SORT_ORDER, true, false, true, 1f, false);
+	}
+
+	// Token: 0x0600049F RID: 1183 RVA: 0x00021F57 File Offset: 0x00020157
+	public void OnPrefabInit(GameObject prefab)
+	{
+	}
+
+	// Token: 0x060004A0 RID: 1184 RVA: 0x00021F59 File Offset: 0x00020159
+	public void OnSpawn(GameObject inst)
+	{
+	}
+
+	// Token: 0x04000325 RID: 805
+	public const string ID = "HatchVeggie";
+
+	// Token: 0x04000326 RID: 806
+	public const string BASE_TRAIT_ID = "HatchVeggieBaseTrait";
+
+	// Token: 0x04000327 RID: 807
+	public const string EGG_ID = "HatchVeggieEgg";
+
+	// Token: 0x04000328 RID: 808
+	private const SimHashes EMIT_ELEMENT = SimHashes.Carbon;
+
+	// Token: 0x04000329 RID: 809
+	private static float KG_ORE_EATEN_PER_CYCLE = 140f;
+
+	// Token: 0x0400032A RID: 810
+	private static float CALORIES_PER_KG_OF_ORE = HatchTuning.STANDARD_CALORIES_PER_CYCLE / HatchVeggieConfig.KG_ORE_EATEN_PER_CYCLE;
+
+	// Token: 0x0400032B RID: 811
+	private static float MIN_POOP_SIZE_IN_KG = 50f;
+
+	// Token: 0x0400032C RID: 812
+	public static int EGG_SORT_ORDER = HatchConfig.EGG_SORT_ORDER + 1;
+}

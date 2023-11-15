@@ -1,0 +1,16 @@
+﻿using System;
+
+// Token: 0x02000064 RID: 100
+public enum EnumRunePropertyType
+{
+	// Token: 0x0400033B RID: 827
+	UNINITED = -1,
+	// Token: 0x0400033C RID: 828
+	FACTORPLAYER,
+	// Token: 0x0400033D RID: 829
+	ORIGINUPGRADE,
+	// Token: 0x0400033E RID: 830
+	UPGRADETYPEBONUS,
+	// Token: 0x0400033F RID: 831
+	BLOCKUPGRADETYPE
+}

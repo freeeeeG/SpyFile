@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A50C8054-425D-46DB-BC94-AA7763C31237}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Geometry Arena\Geometry Arena_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManager.cs" />
+    <Compile Include="AutoLogo.cs" />
+    <Compile Include="AutoRunManager.cs" />
+    <Compile Include="AutoRunManager_Graph.cs" />
+    <Compile Include="BackgroundParticle.cs" />
+    <Compile Include="BasicUnit.cs" />
+    <Compile Include="Battle.cs" />
+    <Compile Include="BattleBuff.cs" />
+    <Compile Include="BattleClipSet.cs" />
+    <Compile Include="BattleItem.cs" />
+    <Compile Include="BattleManager.cs" />
+    <Compile Include="BattleMapCanvas.cs" />
+    <Compile Include="BGMControl.cs" />
+    <Compile Include="BloomMaterialControl.cs" />
+    <Compile Include="BuffManager.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="BulletAlphaManager.cs" />
+    <Compile Include="BulletAlphaManager_Graph.cs" />
+    <Compile Include="BulletEffects.cs" />
+    <Compile Include="BulletsOptimization.cs" />
+    <Compile Include="ButtonMouseDetector.cs" />
+    <Compile Include="ColorSet.cs" />
+    <Compile Include="CommonLog.cs" />
+    <Compile Include="CommonObj.cs" />
+    <Compile Include="CursorControl.cs" />
+    <Compile Include="CustomLabelAttribute.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DataPersistence.cs" />
+    <Compile Include="DataSelector.cs" />
+    <Compile Include="DifficultyOption.cs" />
+    <Compile Include="Drone.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyColorManager.cs" />
+    <Compile Include="EnemyColorManager_Graph.cs" />
+    <Compile Include="EnemyGeneration.cs" />
+    <Compile Include="EnemyInfoDisplayText.cs" />
+    <Compile Include="EnemyModel.cs" />
+    <Compile Include="EnumBulletType.cs" />
+    <Compile Include="EnumLanguage.cs" />
+    <Compile Include="EnumLevelType.cs" />
+    <Compile Include="EnumModeType.cs" />
+    <Compile Include="EnumMoveType.cs" />
+    <Compile Include="EnumObjType.cs" />
+    <Compile Include="EnumRank.cs" />
+    <Compile Include="EnumRotateType.cs" />
+    <Compile Include="EnumRunePropertyType.cs" />
+    <Compile Include="EnumSceneType.cs" />
+    <Compile Include="EnumShapeType.cs" />
+    <Compile Include="EnumSkillType.cs" />
+    <Compile Include="EnumTimeStage.cs" />
+    <Compile Include="EnumTrigType.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="Factor.cs" />
+    <Compile Include="FactorBattle.cs" />
+    <Compile Include="FactorMultis.cs" />
+    <Compile Include="File_Job.cs" />
+    <Compile Include="FloatDamageText.cs" />
+    <Compile Include="FloatDamageTextControl.cs" />
+    <Compile Include="FPSDetector.cs" />
+    <Compile Include="Fragment.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="GameParameters.cs" />
+    <Compile Include="GrenadeDrone.cs" />
+    <Compile Include="Guide.cs" />
+    <Compile Include="GunObj.cs" />
+    <Compile Include="HealthPointControl.cs" />
+    <Compile Include="HealthPointUnit.cs" />
+    <Compile Include="Icon_AutoFire.cs" />
+    <Compile Include="ItemDrone.cs" />
+    <Compile Include="LanguageSet.cs" />
+    <Compile Include="LanguageText.cs" />
+    <Compile Include="LaserDrone.cs" />
+    <Compile Include="LevelParameters.cs" />
+    <Compile Include="LightDrone.cs" />
+    <Compile Include="MainCamera.cs" />
+    <Compile Include="MainCanvas.cs" />
+    <Compile Include="MainMenuClipSet.cs" />
+    <Compile Include="MainMenuColorManager.cs" />
+    <Compile Include="Mastery.cs" />
+    <Compile Include="MyColor.cs" />
+    <Compile Include="MyDate.cs" />
+    <Compile Include="MyEncrypt.cs" />
+    <Compile Include="MyInput.cs" />
+    <Compile Include="MyRandom.cs" />
+    <Compile Include="MyRandom_ForSaveFile.cs" />
+    <Compile Include="MySqlAccess.cs" />
+    <Compile Include="MySteamAchievement.cs" />
+    <Compile Include="MyStringExtension.cs" />
+    <Compile Include="MyTool.cs" />
+    <Compile Include="NetworkTime.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="Panel_Language.cs" />
+    <Compile Include="Panel_Manual.cs" />
+    <Compile Include="Panel_ShanguoDemo.cs" />
+    <Compile Include="Panel_WordsFromDeveloper.cs" />
+    <Compile Include="Particle.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerModel.cs" />
+    <Compile Include="PlayerPositionIndicator.cs" />
+    <Compile Include="PlayerPreview.cs" />
+    <Compile Include="Player_0_NormalSoldier.cs" />
+    <Compile Include="Player_10_Lasergun.cs" />
+    <Compile Include="Player_11_CPU.cs" />
+    <Compile Include="Player_1_Sniper.cs" />
+    <Compile Include="Player_2_Magician.cs" />
+    <Compile Include="Player_3_TwoGun.cs" />
+    <Compile Include="Player_4_Tri.cs" />
+    <Compile Include="Player_5_Summoner.cs" />
+    <Compile Include="Player_6_Cannon.cs" />
+    <Compile Include="Player_7_ShotGun.cs" />
+    <Compile Include="Player_8_Machineguner.cs" />
+    <Compile Include="Player_9_SwordMaster.cs" />
+    <Compile Include="PostProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record.cs" />
+    <Compile Include="Resolution.cs" />
+    <Compile Include="ResourceLibrary.cs" />
+    <Compile Include="Rune.cs" />
+    <Compile Include="RuneData.cs" />
+    <Compile Include="RuneGood.cs" />
+    <Compile Include="RuneStore.cs" />
+    <Compile Include="Rune_Property.cs" />
+    <Compile Include="SaveFile.cs" />
+    <Compile Include="SaveFileBackUp.cs" />
+    <Compile Include="SaveFile_BattleItem.cs" />
+    <Compile Include="SaveFile_Fragment.cs" />
+    <Compile Include="SaveFile_Path.cs" />
+    <Compile Include="SaveFile_Settings.cs" />
+    <Compile Include="SceneObj.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="Settings_IntSet.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="SkillModule.cs" />
+    <Compile Include="Skill_Player0_Shileds.cs" />
+    <Compile Include="Skill_Player0_Shileds_Single.cs" />
+    <Compile Include="Skill_Player8_Wave.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="SoundEffects.cs" />
+    <Compile Include="SoundPlayer.cs" />
+    <Compile Include="SpecialBullet_Grenade.cs" />
+    <Compile Include="SpecialBullet_Laser.cs" />
+    <Compile Include="SpecialBullet_Magic.cs" />
+    <Compile Include="SpecialBullet_Mine.cs" />
+    <Compile Include="SpecialBullet_Missile.cs" />
+    <Compile Include="SpecialBullet_SmallLaser.cs" />
+    <Compile Include="SpecialBullet_Summon.cs" />
+    <Compile Include="SpecialBullet_Sword.cs" />
+    <Compile Include="SpecialEffects.cs" />
+    <Compile Include="SpriteList.cs" />
+    <Compile Include="SqlManager.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="Talent.cs" />
+    <Compile Include="TargetDrone.cs" />
+    <Compile Include="TempData.cs" />
+    <Compile Include="TestTool.cs" />
+    <Compile Include="TextSet.cs" />
+    <Compile Include="TimeManager.cs" />
+    <Compile Include="TutorialData.cs" />
+    <Compile Include="TutorialMaster.cs" />
+    <Compile Include="TutorialTrigger.cs" />
+    <Compile Include="UIButtonSoundTrigger.cs" />
+    <Compile Include="UICamera.cs" />
+    <Compile Include="UIPanelSoundTrigger.cs" />
+    <Compile Include="UI_FloatTextControl.cs" />
+    <Compile Include="UI_Icon.cs" />
+    <Compile Include="UI_Icon_AbilityBattle.cs" />
+    <Compile Include="UI_Icon_AbilityMain.cs" />
+    <Compile Include="UI_Icon_AutoFuse.cs" />
+    <Compile Include="UI_Icon_BattleBuff.cs" />
+    <Compile Include="UI_Icon_BattleDifficultyOptionList.cs" />
+    <Compile Include="UI_Icon_BattleDPS.cs" />
+    <Compile Include="UI_Icon_BattleUpgradeList.cs" />
+    <Compile Include="UI_Icon_Color.cs" />
+    <Compile Include="UI_Icon_DailyAward.cs" />
+    <Compile Include="UI_Icon_DifficultyOption.cs" />
+    <Compile Include="UI_Icon_FactorBattle.cs" />
+    <Compile Include="UI_Icon_GeometryCoin.cs" />
+    <Compile Include="UI_Icon_GeometryCoin_InAward.cs" />
+    <Compile Include="UI_Icon_GuideSingleTitle.cs" />
+    <Compile Include="UI_Icon_Job.cs" />
+    <Compile Include="UI_Icon_ModeIcon.cs" />
+    <Compile Include="UI_Icon_Proficiency.cs" />
+    <Compile Include="UI_Icon_Rune.cs" />
+    <Compile Include="UI_Icon_RuneButton.cs" />
+    <Compile Include="UI_Icon_RuneStoreSingleGood.cs" />
+    <Compile Include="UI_Icon_Rune_SynResult_SingleProp.cs" />
+    <Compile Include="UI_Icon_Setting.cs" />
+    <Compile Include="UI_Icon_Setting_Slider.cs" />
+    <Compile Include="UI_Icon_Skill.cs" />
+    <Compile Include="UI_Icon_SkillModule.cs" />
+    <Compile Include="UI_Icon_Star.cs" />
+    <Compile Include="UI_Icon_Talent.cs" />
+    <Compile Include="UI_Icon_Upgrade.cs" />
+    <Compile Include="UI_Icon_UpgradeListMain.cs" />
+    <Compile Include="UI_Main_VersionShow.cs" />
+    <Compile Include="UI_Panel_Battle_AbilityShow.cs" />
+    <Compile Include="UI_Panel_Battle_BattleAward.cs" />
+    <Compile Include="UI_Panel_Battle_BattleBuffsShow.cs" />
+    <Compile Include="UI_Panel_Battle_BattleButtons.cs" />
+    <Compile Include="UI_Panel_Battle_ConfirmDeleteUpgrade.cs" />
+    <Compile Include="UI_Panel_Battle_DifficultyLevel.cs" />
+    <Compile Include="UI_Panel_Battle_DifficultyOptionShow.cs" />
+    <Compile Include="UI_Panel_Battle_FactorBattleShow.cs" />
+    <Compile Include="UI_Panel_Battle_Pause.cs" />
+    <Compile Include="UI_Panel_Battle_UpgradeShop.cs" />
+    <Compile Include="UI_Panel_Battle_UpgradeShop_MysteryBag.cs" />
+    <Compile Include="UI_Panel_Battle_UpgradeShop_Single.cs" />
+    <Compile Include="UI_Panel_Battle_UpgradeShow.cs" />
+    <Compile Include="UI_Panel_CommonLog.cs" />
+    <Compile Include="UI_Panel_Daily_Award.cs" />
+    <Compile Include="UI_Panel_EnemyLibrary_EnemyIcon.cs" />
+    <Compile Include="UI_Panel_Main_Ability.cs" />
+    <Compile Include="UI_Panel_Main_DifficultyOptions.cs" />
+    <Compile Include="UI_Panel_Main_IconList.cs" />
+    <Compile Include="UI_Panel_Main_Jobs.cs" />
+    <Compile Include="UI_Panel_Main_LibraryBattleItem.cs" />
+    <Compile Include="UI_Panel_Main_LibraryEnemy.cs" />
+    <Compile Include="UI_Panel_Main_LibraryMain.cs" />
+    <Compile Include="UI_Panel_Main_LibraryUpgrade.cs" />
+    <Compile Include="UI_Panel_Main_NewGame.cs" />
+    <Compile Include="UI_Panel_Main_RuneList.cs" />
+    <Compile Include="UI_Panel_Main_RunePanel.cs" />
+    <Compile Include="UI_Panel_Main_RuneSynResult.cs" />
+    <Compile Include="UI_Panel_Main_RuneSynResult_Child.cs" />
+    <Compile Include="UI_Panel_Main_SkillModule.cs" />
+    <Compile Include="UI_Panel_Main_Talents.cs" />
+    <Compile Include="UI_Panel_Main_UpdateLog.cs" />
+    <Compile Include="UI_Panel_Main_VarColors.cs" />
+    <Compile Include="UI_Panel_RankList.cs" />
+    <Compile Include="UI_Panel_RankList_Infinity.cs" />
+    <Compile Include="UI_Panel_Rune_RuneDetail.cs" />
+    <Compile Include="UI_Panel_Rune_RuneSort.cs" />
+    <Compile Include="UI_Panel_Rune_RuneStore.cs" />
+    <Compile Include="UI_Panel_Setting.cs" />
+    <Compile Include="UI_Panel_UpgradeLibrary_SingleType_Icons.cs" />
+    <Compile Include="UI_Panel_UpgradeLibrary_SingleType_Main.cs" />
+    <Compile Include="UI_Setting.cs" />
+    <Compile Include="UI_SingleFloatText.cs" />
+    <Compile Include="UI_SingleRow_RankList_Infinity.cs" />
+    <Compile Include="UI_Text_Main_StarBonus.cs" />
+    <Compile Include="UI_Text_SimpleTooltip.cs" />
+    <Compile Include="UI_ToolTip.cs" />
+    <Compile Include="UI_ToolTipInfo.cs" />
+    <Compile Include="UpdateLog.cs" />
+    <Compile Include="Upgrade.cs" />
+    <Compile Include="UpgradeShop.cs" />
+    <Compile Include="UpgradeType.cs" />
+    <Compile Include="Upgrade_BulletEffect.cs" />
+    <Compile Include="VarColor.cs" />
+    <Compile Include="WavePara.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
