@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BDDEC62-F6AD-4F06-9447-D85F27781425}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="StylizedWaterForURP">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\StylizedWaterForURP.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARPGFX\ARPGFXCycler.cs" />
+    <Compile Include="ARPGFX\ARPGFXLightFade.cs" />
+    <Compile Include="ARPGFX\ARPGFXLightFlicker.cs" />
+    <Compile Include="ARPGFX\ARPGFXLoopScript.cs" />
+    <Compile Include="ARPGFX\ARPGFXPortalScript.cs" />
+    <Compile Include="ARPGFX\ARPGFXRotation.cs" />
+    <Compile Include="ARPGFX\ARPGSceneSelect.cs" />
+    <Compile Include="BuoyantObject.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectArea.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectAreaExtensions.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectPlayer.cs" />
+    <Compile Include="Coffee\UIExtensions\IParameterTexture.cs" />
+    <Compile Include="Coffee\UIExtensions\Matrix2x3.cs" />
+    <Compile Include="Coffee\UIExtensions\ParameterTexture.cs" />
+    <Compile Include="Coffee\UIExtensions\UIEffectBase.cs" />
+    <Compile Include="Coffee\UIExtensions\UIShiny.cs" />
+    <Compile Include="CompoundRendererFeature\PostProcess\ColorGrading.cs" />
+    <Compile Include="CompoundRendererFeature\PostProcess\ColorGradingRenderer.cs" />
+    <Compile Include="CompoundRendererFeature\PostProcess\StylizedDetail.cs" />
+    <Compile Include="CompoundRendererFeature\PostProcess\StylizedDetailRenderer.cs" />
+    <Compile Include="Dustyroom\LinearMotion.cs" />
+    <Compile Include="Dustyroom\OrbitMotion.cs" />
+    <Compile Include="EnableCameraDepthInForward.cs" />
+    <Compile Include="EpicToonFX\ETFXButtonScript.cs" />
+    <Compile Include="EpicToonFX\ETFXEffectController.cs" />
+    <Compile Include="EpicToonFX\ETFXEffectControllerPooled.cs" />
+    <Compile Include="EpicToonFX\ETFXEffectCycler.cs" />
+    <Compile Include="EpicToonFX\ETFXFireProjectile.cs" />
+    <Compile Include="EpicToonFX\ETFXLightFade.cs" />
+    <Compile Include="EpicToonFX\ETFXLoopScript.cs" />
+    <Compile Include="EpicToonFX\ETFXMouseOrbit.cs" />
+    <Compile Include="EpicToonFX\ETFXPitchRandomizer.cs" />
+    <Compile Include="EpicToonFX\ETFXProjectileScript.cs" />
+    <Compile Include="EpicToonFX\ETFXRotation.cs" />
+    <Compile Include="EpicToonFX\ETFXSceneManager.cs" />
+    <Compile Include="EpicToonFX\ETFXTarget.cs" />
+    <Compile Include="ETFXPEL\ButtonTypes.cs" />
+    <Compile Include="ETFXPEL\ParticleEffectsLibrary.cs" />
+    <Compile Include="ETFXPEL\PEButtonScript.cs" />
+    <Compile Include="ETFXPEL\UICanvasManager.cs" />
+    <Compile Include="ExternalPropertyAttributes\AllowNestingAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\AnimatorParamAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\BoxGroupAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ButtonAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\CurveRangeAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\DisableIfAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\DrawerAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\DropdownAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\DropdownList.cs" />
+    <Compile Include="ExternalPropertyAttributes\EButtonEnableMode.cs" />
+    <Compile Include="ExternalPropertyAttributes\EColor.cs" />
+    <Compile Include="ExternalPropertyAttributes\EColorExtensions.cs" />
+    <Compile Include="ExternalPropertyAttributes\EConditionOperator.cs" />
+    <Compile Include="ExternalPropertyAttributes\EInfoBoxType.cs" />
+    <Compile Include="ExternalPropertyAttributes\EnableIfAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\EnableIfAttributeBase.cs" />
+    <Compile Include="ExternalPropertyAttributes\EnumFlagsAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ExpandableAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\FoldoutAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\HideIfAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\HorizontalLineAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ICustomAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\IDropdownList.cs" />
+    <Compile Include="ExternalPropertyAttributes\IGroupAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\InfoBoxAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\InputAxisAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\LabelAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\MaxValueAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\MetaAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\MinMaxSliderAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\MinValueAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\OnValueChangedAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ProgressBarAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ReadOnlyAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ReorderableListAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\RequiredAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ResizableTextAreaAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\SceneAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ShowAssetPreviewAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ShowIfAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ShowIfAttributeBase.cs" />
+    <Compile Include="ExternalPropertyAttributes\ShowNativePropertyAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ShowNonSerializedFieldAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\SpecialCaseDrawerAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\TagAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ValidateInputAttribute.cs" />
+    <Compile Include="ExternalPropertyAttributes\ValidatorAttribute.cs" />
+    <Compile Include="FlatKit\BlitTexturePass.cs" />
+    <Compile Include="FlatKit\Buoyancy.cs" />
+    <Compile Include="FlatKit\FlatKitFog.cs" />
+    <Compile Include="FlatKit\FlatKitOutline.cs" />
+    <Compile Include="FlatKit\FogSettings.cs" />
+    <Compile Include="FlatKit\OutlineSettings.cs" />
+    <Compile Include="FlatKit\UvScroller.cs" />
+    <Compile Include="Game\General\Navigation\NavMeshFollower.cs" />
+    <Compile Include="Helios\GUI\AnimationRect.cs" />
+    <Compile Include="Helios\GUI\ControlPanel.cs" />
+    <Compile Include="Helios\GUI\FakeLoadingBar.cs" />
+    <Compile Include="Helios\GUI\GameManager.cs" />
+    <Compile Include="Helios\GUI\ObjectRotate.cs" />
+    <Compile Include="Helios\GUI\Packer.cs" />
+    <Compile Include="Helios\GUI\PanelController.cs" />
+    <Compile Include="Helios\GUI\PanelDependency.cs" />
+    <Compile Include="Helios\GUI\PasswordShowHide.cs" />
+    <Compile Include="Helios\GUI\ShowFxWhenClicked.cs" />
+    <Compile Include="Helios\GUI\SimpleScrollSnap.cs" />
+    <Compile Include="Helios\GUI\Singleton.cs" />
+    <Compile Include="Helios\GUI\SingletonMono.cs" />
+    <Compile Include="Helios\GUI\SingletonPersistent.cs" />
+    <Compile Include="Helios\GUI\SlotMachineController.cs" />
+    <Compile Include="Helios\GUI\WarpText.cs" />
+    <Compile Include="Helios\GUI\WheelMenuController.cs" />
+    <Compile Include="KevinIglesias\AddCastEffect.cs" />
+    <Compile Include="KevinIglesias\BowLoadScript.cs" />
+    <Compile Include="KevinIglesias\CastHand.cs" />
+    <Compile Include="KevinIglesias\CastSpells.cs" />
+    <Compile Include="KevinIglesias\ChangeSpear.cs" />
+    <Compile Include="KevinIglesias\IdleThrowTrick.cs" />
+    <Compile Include="KevinIglesias\PropType.cs" />
+    <Compile Include="KevinIglesias\SoldierHandsIK.cs" />
+    <Compile Include="KevinIglesias\SoldierIKGoal.cs" />
+    <Compile Include="KevinIglesias\ThrowBigAxe.cs" />
+    <Compile Include="KevinIglesias\ThrowFireball.cs" />
+    <Compile Include="KevinIglesias\ThrowHealing.cs" />
+    <Compile Include="KevinIglesias\ThrowMultipleProps.cs" />
+    <Compile Include="KevinIglesias\ThrowNova.cs" />
+    <Compile Include="KevinIglesias\ThrowProp.cs" />
+    <Compile Include="KevinIglesias\ThrowShockwave.cs" />
+    <Compile Include="KevinIglesias\VillagerHandsIK.cs" />
+    <Compile Include="KevinIglesias\VillagerIKGoal.cs" />
+    <Compile Include="LayerLab\CasualGame\PanelCasualGame.cs" />
+    <Compile Include="LayerLab\CasualGame\PanelControlCasualGame.cs" />
+    <Compile Include="LayerLab\FantasyRPG\PanelControlFantasyRPG.cs" />
+    <Compile Include="LayerLab\FantasyRPG\PanelFantasyRPG.cs" />
+    <Compile Include="LayerLab\PanelControlSimpleCasual.cs" />
+    <Compile Include="LayerLab\PanelSimpleCasual.cs" />
+    <Compile Include="LightControlBehaviour.cs" />
+    <Compile Include="LightControlClip.cs" />
+    <Compile Include="LightControlMixerBehaviour.cs" />
+    <Compile Include="LightControlTrack.cs" />
+    <Compile Include="ModularOptions\AnisotropicFilteringDropdown.cs" />
+    <Compile Include="ModularOptions\BloomSlider.cs" />
+    <Compile Include="ModularOptions\BoolToggle.cs" />
+    <Compile Include="ModularOptions\ChromaticAberrationToggle.cs" />
+    <Compile Include="ModularOptions\DepthOfFieldToggle.cs" />
+    <Compile Include="ModularOptions\DisableOnStart.cs" />
+    <Compile Include="ModularOptions\DisplaySliderValue.cs" />
+    <Compile Include="ModularOptions\DropdownData.cs" />
+    <Compile Include="ModularOptions\DropdownOption.cs" />
+    <Compile Include="ModularOptions\ExternalOptionDropdown.cs" />
+    <Compile Include="ModularOptions\ExternalOptionSlider.cs" />
+    <Compile Include="ModularOptions\ExternalOptionToggle.cs" />
+    <Compile Include="ModularOptions\FieldOfViewSlider.cs" />
+    <Compile Include="ModularOptions\FilmGrainSlider.cs" />
+    <Compile Include="ModularOptions\FirstPersonCameraRotation.cs" />
+    <Compile Include="ModularOptions\FloatSlider.cs" />
+    <Compile Include="ModularOptions\FullscreenToggle.cs" />
+    <Compile Include="ModularOptions\IntDropdown.cs" />
+    <Compile Include="ModularOptions\InvokeOtherButtonOnClick.cs" />
+    <Compile Include="ModularOptions\ISliderDisplayFormatter.cs" />
+    <Compile Include="ModularOptions\LoadSceneButton.cs" />
+    <Compile Include="ModularOptions\MenuDepthOfFieldBlur.cs" />
+    <Compile Include="ModularOptions\MotionBlurToggle.cs" />
+    <Compile Include="ModularOptions\MSAADropdown.cs" />
+    <Compile Include="ModularOptions\OptionBase.cs" />
+    <Compile Include="ModularOptions\OptionPreset.cs" />
+    <Compile Include="ModularOptions\OptionSaveSystem.cs" />
+    <Compile Include="ModularOptions\PostProcessingDropdown.cs" />
+    <Compile Include="ModularOptions\PostProcessingSlider.cs" />
+    <Compile Include="ModularOptions\PostProcessingToggle.cs" />
+    <Compile Include="ModularOptions\QualityLevelDropdown.cs" />
+    <Compile Include="ModularOptions\QuitButton.cs" />
+    <Compile Include="ModularOptions\ResolutionDropdown.cs" />
+    <Compile Include="ModularOptions\ResolutionRefreshRateDropdown.cs" />
+    <Compile Include="ModularOptions\RestoreDefaultsButton.cs" />
+    <Compile Include="ModularOptions\SavePlayerPrefsButton.cs" />
+    <Compile Include="ModularOptions\SceneRefAttribute.cs" />
+    <Compile Include="ModularOptions\ScrollViewOnSelect.cs" />
+    <Compile Include="ModularOptions\SelectableUISound.cs" />
+    <Compile Include="ModularOptions\SelectableUISoundData.cs" />
+    <Compile Include="ModularOptions\SensitivitySlider.cs" />
+    <Compile Include="ModularOptions\SetCursorAttributesOnAwake.cs" />
+    <Compile Include="ModularOptions\ShadowQualityDropdown.cs" />
+    <Compile Include="ModularOptions\SliderData.cs" />
+    <Compile Include="ModularOptions\SliderOption.cs" />
+    <Compile Include="ModularOptions\TextureQualityDropdown.cs" />
+    <Compile Include="ModularOptions\TextureResolutionDropdown.cs" />
+    <Compile Include="ModularOptions\ToggleData.cs" />
+    <Compile Include="ModularOptions\ToggleOption.cs" />
+    <Compile Include="ModularOptions\UIDataType.cs" />
+    <Compile Include="ModularOptions\UITooltip.cs" />
+    <Compile Include="ModularOptions\URPMSAADropdown.cs" />
+    <Compile Include="ModularOptions\VignetteToggle.cs" />
+    <Compile Include="ModularOptions\VolumeSlider.cs" />
+    <Compile Include="ModularOptions\VSyncToggle.cs" />
+    <Compile Include="ModularOptions\WindowmodeDropdown.cs" />
+    <Compile Include="NavMeshAgentControlBehaviour.cs" />
+    <Compile Include="NavMeshAgentControlClip.cs" />
+    <Compile Include="NavMeshAgentControlMixerBehaviour.cs" />
+    <Compile Include="NavMeshAgentControlTrack.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenFaderBehaviour.cs" />
+    <Compile Include="ScreenFaderClip.cs" />
+    <Compile Include="ScreenFaderMixerBehaviour.cs" />
+    <Compile Include="ScreenFaderTrack.cs" />
+    <Compile Include="StylizedWater\GerstnerWaveDisplacement.cs" />
+    <Compile Include="Tantawowa\Demo\DemoScripts\Robot.cs" />
+    <Compile Include="Tantawowa\Demo\DemoScripts\RobotState.cs" />
+    <Compile Include="Tantawowa\Demo\DemoScripts\UIManager.cs" />
+    <Compile Include="Tantawowa\Extensions\PrimitiveExtensions.cs" />
+    <Compile Include="Tantawowa\TimelineEvents\EventInvocationInfo.cs" />
+    <Compile Include="Tantawowa\TimelineEvents\TimelineEventBehaviour.cs" />
+    <Compile Include="Tantawowa\TimelineEvents\TimelineEventClip.cs" />
+    <Compile Include="Tantawowa\TimelineEvents\TimelineEventMixerBehaviour.cs" />
+    <Compile Include="Tantawowa\TimelineEvents\TimelineEventTrack.cs" />
+    <Compile Include="TextSwitcherBehaviour.cs" />
+    <Compile Include="TextSwitcherClip.cs" />
+    <Compile Include="TextSwitcherMixerBehaviour.cs" />
+    <Compile Include="TextSwitcherTrack.cs" />
+    <Compile Include="TimeDilationBehaviour.cs" />
+    <Compile Include="TimeDilationClip.cs" />
+    <Compile Include="TimeDilationMixerBehaviour.cs" />
+    <Compile Include="TimeDilationTrack.cs" />
+    <Compile Include="TransformTweenBehaviour.cs" />
+    <Compile Include="TransformTweenClip.cs" />
+    <Compile Include="TransformTweenMixerBehaviour.cs" />
+    <Compile Include="TransformTweenTrack.cs" />
+    <Compile Include="UIType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PostProcessing\CompoundPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PostProcessing\CompoundRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PostProcessing\CompoundRendererFeatureAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PostProcessing\InjectionPoint.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PostProcessing\QuibliPostProcess.cs" />
+    <Compile Include="UnityEngine\Timeline\VideoPlayableBehaviour.cs" />
+    <Compile Include="UnityEngine\Timeline\VideoSchedulerPlayableBehaviour.cs" />
+    <Compile Include="UnityEngine\Timeline\VideoScriptPlayableAsset.cs" />
+    <Compile Include="UnityEngine\Timeline\VideoScriptPlayableTrack.cs" />
+    <Compile Include="UnityEngine\UI\Extensions\CasualGame\UIParticleSystem.cs" />
+    <Compile Include="UnityEngine\UI\Extensions\FantasyRPG\UIParticleSystem.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

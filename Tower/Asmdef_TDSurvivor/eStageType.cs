@@ -1,0 +1,32 @@
+﻿using System;
+
+// Token: 0x02000007 RID: 7
+public enum eStageType
+{
+	// Token: 0x04000003 RID: 3
+	NONE,
+	// Token: 0x04000004 RID: 4
+	START,
+	// Token: 0x04000005 RID: 5
+	BATTLE,
+	// Token: 0x04000006 RID: 6
+	SHOP,
+	// Token: 0x04000007 RID: 7
+	SPECIAL_EVENT,
+	// Token: 0x04000008 RID: 8
+	BOSS,
+	// Token: 0x04000009 RID: 9
+	TREASURE,
+	// Token: 0x0400000A RID: 10
+	DIAMOND,
+	// Token: 0x0400000B RID: 11
+	WORKSHOP,
+	// Token: 0x0400000C RID: 12
+	RECOVER,
+	// Token: 0x0400000D RID: 13
+	PORTAL,
+	// Token: 0x0400000E RID: 14
+	ACADEMY,
+	// Token: 0x0400000F RID: 15
+	BATTLE_CORRUPTED
+}

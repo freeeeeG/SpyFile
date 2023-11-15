@@ -1,0 +1,22 @@
+﻿using System;
+
+// Token: 0x02000071 RID: 113
+public enum eTetrisType
+{
+	// Token: 0x040002D6 RID: 726
+	NONE,
+	// Token: 0x040002D7 RID: 727
+	L_BLOCK,
+	// Token: 0x040002D8 RID: 728
+	L_BLOCK_INVERSE,
+	// Token: 0x040002D9 RID: 729
+	Z_BLOCK,
+	// Token: 0x040002DA RID: 730
+	Z_BLOCK_INVERSE,
+	// Token: 0x040002DB RID: 731
+	I_BLOCK,
+	// Token: 0x040002DC RID: 732
+	SQUARE_BLOCK,
+	// Token: 0x040002DD RID: 733
+	T_BLOCK
+}

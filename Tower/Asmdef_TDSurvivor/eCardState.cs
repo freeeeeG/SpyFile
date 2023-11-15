@@ -1,0 +1,22 @@
+﻿using System;
+
+// Token: 0x0200012C RID: 300
+public enum eCardState
+{
+	// Token: 0x0400063B RID: 1595
+	HIDE,
+	// Token: 0x0400063C RID: 1596
+	NORMAL,
+	// Token: 0x0400063D RID: 1597
+	ANIMATION,
+	// Token: 0x0400063E RID: 1598
+	DRAGGING,
+	// Token: 0x0400063F RID: 1599
+	BUILDING,
+	// Token: 0x04000640 RID: 1600
+	RECOVERING,
+	// Token: 0x04000641 RID: 1601
+	DOCKED,
+	// Token: 0x04000642 RID: 1602
+	REMOVED
+}

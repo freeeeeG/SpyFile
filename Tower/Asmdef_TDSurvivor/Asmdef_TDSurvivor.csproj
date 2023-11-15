@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BDDEC62-F6AD-4F06-9447-D85F27781423}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asmdef_TDSurvivor</RootNamespace>
+    <AssemblyName>Asmdef_TDSurvivor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cinemachine">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="EasySave3">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\EasySave3.dll</HintPath>
+    </Reference>
+    <Reference Include="Febucci.TextAnimator.Runtime">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Febucci.TextAnimator.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Febucci.TextAnimator.TMP.Runtime">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Febucci.TextAnimator.TMP.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Highlighters">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Highlighters.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanPool">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\LeanPool.dll</HintPath>
+    </Reference>
+    <Reference Include="LeanTouch">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\LeanTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityUIExtensions">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Emberward Demo\Emberward_Data\Managed\UnityUIExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABaseBuffSettingData.cs" />
+    <Compile Include="ABaseCannon.cs" />
+    <Compile Include="ABaseNode.cs" />
+    <Compile Include="ABasePanel.cs" />
+    <Compile Include="ABaseStageData.cs" />
+    <Compile Include="ABaseStageSettingData.cs" />
+    <Compile Include="ABaseTower.cs" />
+    <Compile Include="ABossStageScript.cs" />
+    <Compile Include="AchievementData.cs" />
+    <Compile Include="AchievementManager.cs" />
+    <Compile Include="ACollectable.cs" />
+    <Compile Include="AGameState.cs" />
+    <Compile Include="AItemSettingData.cs" />
+    <Compile Include="AlwaysFaceCamera.cs" />
+    <Compile Include="AMonsterBase.cs" />
+    <Compile Include="AnimatorExtensions.cs" />
+    <Compile Include="AnimEvent_CameraShake.cs" />
+    <Compile Include="AnimEvent_ParticleCtrl.cs" />
+    <Compile Include="AnimEvent_SoundCtrl.cs" />
+    <Compile Include="AnimFunc_LockAtRandomOffsetOnStart.cs" />
+    <Compile Include="AnimFunc_SyncOnStart.cs" />
+    <Compile Include="AObj_RandomPlacement.cs" />
+    <Compile Include="APopupWindow.cs" />
+    <Compile Include="APowerGrid.cs" />
+    <Compile Include="AProjectile.cs" />
+    <Compile Include="AreaFreezeOnHitBuff.cs" />
+    <Compile Include="ASingleTargetProjectile.cs" />
+    <Compile Include="AStageScript.cs" />
+    <Compile Include="ATowerComponentSettingData.cs" />
+    <Compile Include="AUI.cs" />
+    <Compile Include="AUICard.cs" />
+    <Compile Include="AUIGameSettingItem.cs" />
+    <Compile Include="AUISituational.cs" />
+    <Compile Include="AW\AnimFunc_RandomOffsetOnStart.cs" />
+    <Compile Include="AW\StringExtension.cs" />
+    <Compile Include="BattleStageData.cs" />
+    <Compile Include="BossNode.cs" />
+    <Compile Include="BuffEffectHandler.cs" />
+    <Compile Include="BulletSettingData.cs" />
+    <Compile Include="Bullet_AOEAttack.cs" />
+    <Compile Include="Bullet_AOEFreeze.cs" />
+    <Compile Include="Bullet_AOEStaticField.cs" />
+    <Compile Include="Bullet_Boulder.cs" />
+    <Compile Include="Bullet_Cannon.cs" />
+    <Compile Include="Bullet_ChainLightning.cs" />
+    <Compile Include="Bullet_EmberFire.cs" />
+    <Compile Include="Bullet_Fireball.cs" />
+    <Compile Include="Bullet_FrontalDamage.cs" />
+    <Compile Include="Bullet_HomingMissile.cs" />
+    <Compile Include="Bullet_Normal.cs" />
+    <Compile Include="Bullet_PoisionDart.cs" />
+    <Compile Include="Bullet_PoisonDrip.cs" />
+    <Compile Include="Bullet_SingleTarget.cs" />
+    <Compile Include="Bullet_Snowball.cs" />
+    <Compile Include="CameraAttributeCopy.cs" />
+    <Compile Include="CameraController.cs" />
+    <Compile Include="CameraManager.cs" />
+    <Compile Include="CameraPositionLimit.cs" />
+    <Compile Include="CannonSettingData.cs" />
+    <Compile Include="Cannon_AOEAttack.cs" />
+    <Compile Include="Cannon_Basic.cs" />
+    <Compile Include="CardController.cs" />
+    <Compile Include="CardData.cs" />
+    <Compile Include="CardManager.cs" />
+    <Compile Include="CenterTargetInScrollView.cs" />
+    <Compile Include="CoinPage.cs" />
+    <Compile Include="Colors.cs" />
+    <Compile Include="CursorManager.cs" />
+    <Compile Include="DamageCalculator.cs" />
+    <Compile Include="DebugManager.cs" />
+    <Compile Include="DebugSettingData.cs" />
+    <Compile Include="DebugSettingSO.cs" />
+    <Compile Include="DinoPinBall\Func_RandomRotationOnEnable.cs" />
+    <Compile Include="DiscoverRewardAssetData.cs" />
+    <Compile Include="DiscoverRewardData.cs" />
+    <Compile Include="DiscoverRewardEntry.cs" />
+    <Compile Include="DiscoverRewardHandler.cs" />
+    <Compile Include="DoubleCoinOnKillBuff.cs" />
+    <Compile Include="eAchievementType.cs" />
+    <Compile Include="Easing.cs" />
+    <Compile Include="eBuffDurationType.cs" />
+    <Compile Include="eCannonType.cs" />
+    <Compile Include="eCardState.cs" />
+    <Compile Include="eCardType.cs" />
+    <Compile Include="eDamageType.cs" />
+    <Compile Include="eDamageTypeExtensions.cs" />
+    <Compile Include="eDebugKey.cs" />
+    <Compile Include="eDiscoverRewardType.cs" />
+    <Compile Include="eDiscoverRewardTypeExtensions.cs" />
+    <Compile Include="EditModeGridEffect.cs" />
+    <Compile Include="eEventStageType.cs" />
+    <Compile Include="eGameEvents.cs" />
+    <Compile Include="eGameState.cs" />
+    <Compile Include="eItemType.cs" />
+    <Compile Include="eItemTypeExtension.cs" />
+    <Compile Include="eMapNodeState.cs" />
+    <Compile Include="eMapSceneEvents.cs" />
+    <Compile Include="eMissionType.cs" />
+    <Compile Include="eModifierType.cs" />
+    <Compile Include="eMonsterPathType.cs" />
+    <Compile Include="eMonsterSize.cs" />
+    <Compile Include="eMonsterType.cs" />
+    <Compile Include="EnvironmentController.cs" />
+    <Compile Include="EnvironmentGridBlocker.cs" />
+    <Compile Include="EnvironmentSettingData.cs" />
+    <Compile Include="EnvSceneCollectionData.cs" />
+    <Compile Include="EnvSceneSettingData.cs" />
+    <Compile Include="ePanelType.cs" />
+    <Compile Include="ePlaceableType.cs" />
+    <Compile Include="ePowerGridType.cs" />
+    <Compile Include="eSceneTimeType.cs" />
+    <Compile Include="eSettingItemCategory.cs" />
+    <Compile Include="eSettingItemType.cs" />
+    <Compile Include="eSoundTypeExtensions.cs" />
+    <Compile Include="eStageDifficulty.cs" />
+    <Compile Include="eStageRewardType.cs" />
+    <Compile Include="eStageType.cs" />
+    <Compile Include="eStatType.cs" />
+    <Compile Include="eTalentType.cs" />
+    <Compile Include="eTetrisType.cs" />
+    <Compile Include="eTowerSizeType.cs" />
+    <Compile Include="eTowerSizeTypeExtension.cs" />
+    <Compile Include="eTowerTargetPriority.cs" />
+    <Compile Include="eTowerTargetPriorityExtensions.cs" />
+    <Compile Include="eTowerTier.cs" />
+    <Compile Include="eTutorialType.cs" />
+    <Compile Include="EventBase.2.cs" />
+    <Compile Include="EventBase.3.cs" />
+    <Compile Include="EventBase.4.cs" />
+    <Compile Include="EventBase.5.cs" />
+    <Compile Include="EventBase.cs" />
+    <Compile Include="EventMgr.cs" />
+    <Compile Include="EventMgrHelper.cs" />
+    <Compile Include="EventStageData.cs" />
+    <Compile Include="EventStageSettingData.cs" />
+    <Compile Include="eWorldType.cs" />
+    <Compile Include="eWorldTypeExtensions.cs" />
+    <Compile Include="ExtraMissileOnShootBuff.cs" />
+    <Compile Include="FireballOnShootBuff.cs" />
+    <Compile Include="FireSourceShootModule.cs" />
+    <Compile Include="FogOfWarControl.cs" />
+    <Compile Include="FogOfWarCtrl.cs" />
+    <Compile Include="FullscreenArcaneMissileOnKillBuff.cs" />
+    <Compile Include="Func_ForceCameraDepthTexture.cs" />
+    <Compile Include="Func_PerlinNoiseFloat.cs" />
+    <Compile Include="GameDataManager.cs" />
+    <Compile Include="GameDebugUtilities.cs" />
+    <Compile Include="GameObjectExtensions.cs" />
+    <Compile Include="GameplayData.cs" />
+    <Compile Include="GameSceneReferenceHandler.cs" />
+    <Compile Include="GameSettingData.cs" />
+    <Compile Include="GameSettingData_CameraShake.cs" />
+    <Compile Include="GameSettingData_DisplayMode.cs" />
+    <Compile Include="GameSettingData_Language.cs" />
+    <Compile Include="GameSettingData_MasterVolume.cs" />
+    <Compile Include="GameSettingData_MaxFPS.cs" />
+    <Compile Include="GameSettingData_MusicVolume.cs" />
+    <Compile Include="GameSettingData_Resolution.cs" />
+    <Compile Include="GameSettingData_SoundVolume.cs" />
+    <Compile Include="GameSettingData_VSync.cs" />
+    <Compile Include="GameSettingData_WindowResolution.cs" />
+    <Compile Include="GameSpeedController.cs" />
+    <Compile Include="GameStateController.cs" />
+    <Compile Include="GrabMonsterOnHitBuff.cs" />
+    <Compile Include="GridSystem.cs" />
+    <Compile Include="HUDFPS.cs" />
+    <Compile Include="ICardDataSource.cs" />
+    <Compile Include="IDynamicPlacementTarget.cs" />
+    <Compile Include="IEventBase.cs" />
+    <Compile Include="IHaveHP.cs" />
+    <Compile Include="ImageExtensions.cs" />
+    <Compile Include="IMapElement.cs" />
+    <Compile Include="IngameData.cs" />
+    <Compile Include="IntermediateData.cs" />
+    <Compile Include="IPlaceable.cs" />
+    <Compile Include="IPlayerStartPoint.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="LevelNode.cs" />
+    <Compile Include="LocalizationManager.cs" />
+    <Compile Include="MainGame.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapData.cs" />
+    <Compile Include="MapGenerateSetting.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="MapNode.cs" />
+    <Compile Include="MapNodeData.cs" />
+    <Compile Include="MapNodePathLine.cs" />
+    <Compile Include="MapSceneFogOfWarControl.cs" />
+    <Compile Include="MapSceneManager.cs" />
+    <Compile Include="MapSceneProcess.cs" />
+    <Compile Include="MaterialExtensions.cs" />
+    <Compile Include="MathfExtensions.cs" />
+    <Compile Include="MathUtils.cs" />
+    <Compile Include="MonsterDamageDebuff.cs" />
+    <Compile Include="MonsterManager.cs" />
+    <Compile Include="MonsterScript_Boss01.cs" />
+    <Compile Include="MonsterSettingData.cs" />
+    <Compile Include="MonsterSpawnData.cs" />
+    <Compile Include="MonsterSpawner.cs" />
+    <Compile Include="MonsterSpawnRequest.cs" />
+    <Compile Include="Monster_Basic.cs" />
+    <Compile Include="Monster_Boss_01.cs" />
+    <Compile Include="Monster_OrcWarchief.cs" />
+    <Compile Include="Monster_TrainingDummy.cs" />
+    <Compile Include="MouseLineRenderer.cs" />
+    <Compile Include="MoveUIByMouse.cs" />
+    <Compile Include="NumberExtensions.cs" />
+    <Compile Include="ObjectMaterialControl.cs" />
+    <Compile Include="ObjectPlacementHandler.cs" />
+    <Compile Include="Obj_BuffGrid.cs" />
+    <Compile Include="Obj_Chest.cs" />
+    <Compile Include="Obj_CorruptedGrid.cs" />
+    <Compile Include="Obj_FireSource.cs" />
+    <Compile Include="Obj_FreezeGrid.cs" />
+    <Compile Include="Obj_GrabEffect.cs" />
+    <Compile Include="Obj_MiniFireSource.cs" />
+    <Compile Include="Obj_PlacementEffect.cs" />
+    <Compile Include="Obj_RandomPlacement_Circle.cs" />
+    <Compile Include="Obj_RandomPlacement_Square.cs" />
+    <Compile Include="Obj_RangeIndicator.cs" />
+    <Compile Include="Obj_SceneDecoration.cs" />
+    <Compile Include="Obj_TetrisBlock.cs" />
+    <Compile Include="Obj_TetrisBlock_Stretch.cs" />
+    <Compile Include="Obj_TrainCart.cs" />
+    <Compile Include="Obj_TrainRail.cs" />
+    <Compile Include="Obj_TrainSystem.cs" />
+    <Compile Include="Obj_UI_LockIcon.cs" />
+    <Compile Include="Obj_UI_MapSceneTowerCard.cs" />
+    <Compile Include="Obj_UI_OverchargeButton.cs" />
+    <Compile Include="Obj_WaterBarrel.cs" />
+    <Compile Include="OutlineController.cs" />
+    <Compile Include="PanelSettingData.cs" />
+    <Compile Include="Panel_Basic.cs" />
+    <Compile Include="PercentageDamageBuff.cs" />
+    <Compile Include="PercentageRangeBuff.cs" />
+    <Compile Include="PercentageShootSpeedBuff.cs" />
+    <Compile Include="PhotoCameraController.cs" />
+    <Compile Include="Photo_Tetris.cs" />
+    <Compile Include="PlayerLifetimeData.cs" />
+    <Compile Include="PowerGridSettingData.cs" />
+    <Compile Include="PrefabManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomPlacementData.cs" />
+    <Compile Include="RandomYRotationOnStart.cs" />
+    <Compile Include="RD2Minigame\Lobby\UI_Transition.cs" />
+    <Compile Include="RD2Minigame\Lobby\UI_Transition_V2.cs" />
+    <Compile Include="Refic\Emberward\Minigame\ATowerOverchargeMinigame.cs" />
+    <Compile Include="Refic\Emberward\Minigame\eOverchargeType.cs" />
+    <Compile Include="Refic\Emberward\Minigame\OverchargeItemData.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_1To9.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_9To1.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_PressAll.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_PressDifferent.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_PressLargest.cs" />
+    <Compile Include="Refic\Emberward\Minigame\TowerOverchargeMinigame_PressSmallest.cs" />
+    <Compile Include="RefiTools\RandomWordGenerator.cs" />
+    <Compile Include="RefiTools\TweenBase.cs" />
+    <Compile Include="RefiTools\TweenPositionAndRotationByVector3.cs" />
+    <Compile Include="RefiTools\TweenPositionByTransform.cs" />
+    <Compile Include="RefiTools\TweenPositionByVector3.cs" />
+    <Compile Include="RefiTools\TweenRotationByTransform.cs" />
+    <Compile Include="RefiTools\TweenRotationByVector3.cs" />
+    <Compile Include="RefiTools\TweenScaleByVector3.cs" />
+    <Compile Include="RefiTools\TweenSpriteColor.cs" />
+    <Compile Include="RefiTools\TweenSpriteSwap.cs" />
+    <Compile Include="RefiTools\TweenTMPTextColor.cs" />
+    <Compile Include="RefiTools\TweenUIImageColor.cs" />
+    <Compile Include="RefiTools\TweenUIImageSwap.cs" />
+    <Compile Include="RefiUtilities.cs" />
+    <Compile Include="RenderTextureResizer.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="SerializableDictionary.2.cs" />
+    <Compile Include="SerializableDictionary.3.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="SerializableDictionaryBase.2.cs" />
+    <Compile Include="SerializableDictionaryBase.cs" />
+    <Compile Include="SerializableHashSet.cs" />
+    <Compile Include="SerializableHashSetBase.cs" />
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="ShakeCamera.cs" />
+    <Compile Include="ShopNode.cs" />
+    <Compile Include="ShopStageData.cs" />
+    <Compile Include="ShuffleListExtensions.cs" />
+    <Compile Include="SingleEventCapturer.2.cs" />
+    <Compile Include="SingleEventCapturer.3.cs" />
+    <Compile Include="SingleEventCapturer.4.cs" />
+    <Compile Include="SingleEventCapturer.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SlicedFilledImage.cs" />
+    <Compile Include="SoundAssetData.cs" />
+    <Compile Include="SoundAssetDataLoader.cs" />
+    <Compile Include="SoundCooldown.cs" />
+    <Compile Include="SoundEntry.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="SoundPlayer.cs" />
+    <Compile Include="SpecialEventNode.cs" />
+    <Compile Include="SpeedToDamageBuff.cs" />
+    <Compile Include="Spin.cs" />
+    <Compile Include="SpriteGroup.cs" />
+    <Compile Include="SpriteGroupInfo.cs" />
+    <Compile Include="StageDataReader.cs" />
+    <Compile Include="StageMonsterSetData.cs" />
+    <Compile Include="StageRewardData.cs" />
+    <Compile Include="StageScript_Tutorial.cs" />
+    <Compile Include="StageSettingData.cs" />
+    <Compile Include="StartNode.cs" />
+    <Compile Include="State_BuffMode.cs" />
+    <Compile Include="State_EditMode.cs" />
+    <Compile Include="State_GamePlay.cs" />
+    <Compile Include="State_NormalMode.cs" />
+    <Compile Include="State_PauseGame.cs" />
+    <Compile Include="StatModifier.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="SteamScript.cs" />
+    <Compile Include="StunOnHitBuff.cs" />
+    <Compile Include="SwichElementBuff.cs" />
+    <Compile Include="SyncMovement.cs" />
+    <Compile Include="TalentSetting.cs" />
+    <Compile Include="TalentSettingData.cs" />
+    <Compile Include="TetrisClickHandler.cs" />
+    <Compile Include="TetrisSettingData.cs" />
+    <Compile Include="TetrisStarterSet.cs" />
+    <Compile Include="TetrisStarterSetData.cs" />
+    <Compile Include="ThunderOnHitBuff.cs" />
+    <Compile Include="TiltUIWithMousePosition.cs" />
+    <Compile Include="TowerBuffModule.cs" />
+    <Compile Include="TowerIngameData.cs" />
+    <Compile Include="TowerOverchargeBuff.cs" />
+    <Compile Include="TowerSettingData.cs" />
+    <Compile Include="TowerStats.cs" />
+    <Compile Include="Tower_Basic.cs" />
+    <Compile Include="Tower_Boulder.cs" />
+    <Compile Include="Tower_Cannon.cs" />
+    <Compile Include="Tower_Dice.cs" />
+    <Compile Include="Tower_Drone.cs" />
+    <Compile Include="Tower_Earthquake.cs" />
+    <Compile Include="Tower_Fireball.cs" />
+    <Compile Include="Tower_Freeze.cs" />
+    <Compile Include="Tower_FrontalDamage.cs" />
+    <Compile Include="Tower_Icicle.cs" />
+    <Compile Include="Tower_Lightning.cs" />
+    <Compile Include="Tower_MachineGun.cs" />
+    <Compile Include="Tower_Missile.cs" />
+    <Compile Include="Tower_NPC_Arrow.cs" />
+    <Compile Include="Tower_Poison.cs" />
+    <Compile Include="Tower_PoisonDart.cs" />
+    <Compile Include="Tower_Scrap.cs" />
+    <Compile Include="Tower_Sniper.cs" />
+    <Compile Include="Tower_SnowBall.cs" />
+    <Compile Include="Tower_StaticField.cs" />
+    <Compile Include="TransformData.cs" />
+    <Compile Include="TransformDataExtensions.cs" />
+    <Compile Include="TransformExtensions.cs" />
+    <Compile Include="TreasureStageData.cs" />
+    <Compile Include="TutorialManager.cs" />
+    <Compile Include="UIGameSettingItem_Slider.cs" />
+    <Compile Include="UIGameSettingItem_Switch.cs" />
+    <Compile Include="UIGameSettingItem_Toggle.cs" />
+    <Compile Include="UIManager.cs" />
+    <Compile Include="UIMouseTracker.cs" />
+    <Compile Include="UIOutline.cs" />
+    <Compile Include="UI_BasicButton.cs" />
+    <Compile Include="UI_BossHPBar.cs" />
+    <Compile Include="UI_BuffApplyText.cs" />
+    <Compile Include="UI_BuildTowerButton.cs" />
+    <Compile Include="UI_BuildTowerButtonController.cs" />
+    <Compile Include="UI_Button_AddRandomTetris.cs" />
+    <Compile Include="UI_Button_AddTetris.cs" />
+    <Compile Include="UI_Button_AddTower.cs" />
+    <Compile Include="UI_Button_BackToTitle.cs" />
+    <Compile Include="UI_Button_OpenCraftUI.cs" />
+    <Compile Include="UI_Button_OpenSettingPage.cs" />
+    <Compile Include="UI_Button_RedrawCards.cs" />
+    <Compile Include="UI_Button_ShowPlayerDeck.cs" />
+    <Compile Include="UI_Button_ShowTalentPage.cs" />
+    <Compile Include="UI_Button_ShowTowerArrangePage.cs" />
+    <Compile Include="UI_Button_StartWave.cs" />
+    <Compile Include="UI_CardFace.cs" />
+    <Compile Include="UI_CheckBackToTitlePopup.cs" />
+    <Compile Include="UI_CheckStartNewGamePopup.cs" />
+    <Compile Include="UI_CinematicBorder.cs" />
+    <Compile Include="UI_ControlTip.cs" />
+    <Compile Include="UI_CraftTower.cs" />
+    <Compile Include="UI_Cursor.cs" />
+    <Compile Include="UI_CursorToolTip.cs" />
+    <Compile Include="UI_DamageNumber.cs" />
+    <Compile Include="UI_DamageNumberController.cs" />
+    <Compile Include="UI_DebugPanel.cs" />
+    <Compile Include="UI_DeckListPopup.cs" />
+    <Compile Include="UI_Defeat_Popup.cs" />
+    <Compile Include="UI_DiscoverCard.cs" />
+    <Compile Include="UI_DraggableCard.cs" />
+    <Compile Include="UI_EditMode.cs" />
+    <Compile Include="UI_Events.cs" />
+    <Compile Include="UI_Func_FollowUITarget.cs" />
+    <Compile Include="UI_GameDialogPopup.cs" />
+    <Compile Include="UI_GameIntro.cs" />
+    <Compile Include="UI_GameSpeedControl.cs" />
+    <Compile Include="UI_GameVersion.cs" />
+    <Compile Include="UI_HoldableButton.cs" />
+    <Compile Include="UI_ItemSlot.cs" />
+    <Compile Include="UI_ItemTutorialPopup.cs" />
+    <Compile Include="UI_MapSceneDecoControl.cs" />
+    <Compile Include="UI_MapScene_Academy_Popup.cs" />
+    <Compile Include="UI_MapScene_PlayerExp.cs" />
+    <Compile Include="UI_MapScene_PlayerGem.cs" />
+    <Compile Include="UI_MapScene_PlayerHP.cs" />
+    <Compile Include="UI_MapScene_Shop_Popup.cs" />
+    <Compile Include="UI_MapScene_Workshop_Popup.cs" />
+    <Compile Include="UI_MapStamp.cs" />
+    <Compile Include="UI_MonsterHPBar.cs" />
+    <Compile Include="UI_MonsterHPBarController.cs" />
+    <Compile Include="UI_NextWaveEnemy.cs" />
+    <Compile Include="UI_Notification.cs" />
+    <Compile Include="UI_NpcDialog_Popup.cs" />
+    <Compile Include="UI_Obj_AcademyCardSet.cs" />
+    <Compile Include="UI_Obj_Card.cs" />
+    <Compile Include="UI_Obj_CardPool.cs" />
+    <Compile Include="UI_Obj_CardSlot.cs" />
+    <Compile Include="UI_Obj_DemoTowerCard.cs" />
+    <Compile Include="UI_Obj_DiscoverCard.cs" />
+    <Compile Include="UI_Obj_FlyInItem.cs" />
+    <Compile Include="UI_Obj_NotificationContent.cs" />
+    <Compile Include="UI_Obj_ShopCard.cs" />
+    <Compile Include="UI_Obj_StageUpgradeItem.cs" />
+    <Compile Include="UI_Obj_TalentButton.cs" />
+    <Compile Include="UI_Obj_TowerBuffIcon.cs" />
+    <Compile Include="UI_Obj_VictoryPhoto.cs" />
+    <Compile Include="UI_Obj_WallCard.cs" />
+    <Compile Include="UI_PauseMenu.cs" />
+    <Compile Include="UI_PlayerDeck.cs" />
+    <Compile Include="UI_PlayerResourceMapScene.cs" />
+    <Compile Include="UI_PlayerStatus.cs" />
+    <Compile Include="UI_PlayerTowerList.cs" />
+    <Compile Include="UI_RoundTimeCountDown.cs" />
+    <Compile Include="UI_ScaleOnMouseOver.cs" />
+    <Compile Include="UI_SettingPage_Popup.cs" />
+    <Compile Include="UI_SocialMediaButtons.cs" />
+    <Compile Include="UI_SoundOnMouseOver.cs" />
+    <Compile Include="UI_StageAnnounce.cs" />
+    <Compile Include="UI_StageProgress.cs" />
+    <Compile Include="UI_StageUpgradeUnlockPopup.cs" />
+    <Compile Include="UI_TalentPage_Popup.cs" />
+    <Compile Include="UI_ThankYouForPlayDemo_Popup.cs" />
+    <Compile Include="UI_TowerArrange_Popup.cs" />
+    <Compile Include="UI_TowerControl.cs" />
+    <Compile Include="UI_TowerOvercharge_Popup.cs" />
+    <Compile Include="UI_Victory.cs" />
+    <Compile Include="UI_WaveAnnounce.cs" />
+    <Compile Include="UI_WaveClear.cs" />
+    <Compile Include="UI_WelcomeToDemo.cs" />
+    <Compile Include="UI_Window_YesNo_Popup.cs" />
+    <Compile Include="UI_WorldMapTitle.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Util_SetDontDestroyOnLoad.cs" />
+    <Compile Include="Vector3Extensions.cs" />
+    <Compile Include="VertexChecker.cs" />
+    <Compile Include="WallSettingData.cs" />
+    <Compile Include="WaveData.cs" />
+    <Compile Include="WaveInfoData.cs" />
+    <Compile Include="WaveInfoMonsterData.cs" />
+    <Compile Include="WeightedRandom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstarPathfindingProject\AstarPathfindingProject.csproj">
+      <Project>{1BDDEC62-F6AD-4F06-9447-D85F27781426}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

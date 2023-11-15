@@ -1,0 +1,18 @@
+﻿using System;
+
+// Token: 0x020000A6 RID: 166
+public enum eMapNodeState
+{
+	// Token: 0x040003AE RID: 942
+	UNINITIALIZED,
+	// Token: 0x040003AF RID: 943
+	TOO_FAR,
+	// Token: 0x040003B0 RID: 944
+	NOT_SELECTED,
+	// Token: 0x040003B1 RID: 945
+	AVALIABLE,
+	// Token: 0x040003B2 RID: 946
+	JUST_FINISHED,
+	// Token: 0x040003B3 RID: 947
+	COMPLETED
+}
